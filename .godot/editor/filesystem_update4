@@ -1,2 +1,5 @@
-res://cenas/final.tscn
+res://scripts/porta.gd
+res://cenas/cena01.tscn
 res://recursos/ground_tileset.tres
+res://scripts/player.gd
+res://cenas/cena02.tscn
