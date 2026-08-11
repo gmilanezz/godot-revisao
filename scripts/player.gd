@@ -24,9 +24,7 @@ func _physics_process(delta: float) -> void:
 	# mapeada E com a animacao "pular" criada no AnimatedSprite2D.
 	# So funciona na cena da fase 4 -- o desafio dela e so ali; nas outras
 	# fases a tecla/animacao continuam existindo, mas nao dao super pulo.
-	if Input.is_action_just_pressed("super_pulo") and is_on_floor() \
-			and sprite.sprite_frames.has_animation("pular") \
-			and get_tree().current_scene.get("indice") == 4:
+	if Input.is_action_just_pressed("super_pulo") and is_on_floor():
 		velocity.y = SUPER_JUMP_VELOCITY
 
 	if pode_dash and Input.is_action_just_pressed("dash"):
