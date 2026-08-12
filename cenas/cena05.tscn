@@ -13,10 +13,10 @@
 [ext_resource type="TileSet" uid="uid://bdm4h4e1j5vtf" path="res://recursos/ground_tileset.tres" id="p_tileset"]
 
 [sub_resource type="RectangleShape2D" id="floor_esq"]
-size = Vector2(700, 128)
+size = Vector2(636, 128)
 
 [sub_resource type="RectangleShape2D" id="floor_dir"]
-size = Vector2(900, 128)
+size = Vector2(1203, 128)
 
 [node name="Cena05" type="Node2D" unique_id=225417925]
 script = ExtResource("p_guarda")
@@ -26,11 +26,12 @@ indice = 5
 position = Vector2(350, 512)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ChaoEsq" unique_id=375691252]
+position = Vector2(-32, 0)
 shape = SubResource("floor_esq")
 
 [node name="ChaoEsqVisual" type="TileMapLayer" parent="." unique_id=225203017]
 position = Vector2(0, 448)
-tile_map_data = PackedByteArray("AAAAAAAAAQAAAAAAAAAAAAEAAAAAAAAAAAABAAAAAQAAAAAAAAABAAEAAAAAAAAAAAACAAAAAQAAAAAAAAACAAEAAAAAAAAAAAADAAAAAQAAAAAAAAADAAEAAAAAAAAAAAAEAAAAAQAAAAAAAAAEAAEAAAAAAAAAAAAFAAAAAQAAAAAAAAAFAAEAAAAAAAAAAAAGAAAAAQAAAAAAAAAGAAEAAAAAAAAAAAAHAAAAAQAAAAAAAAAHAAEAAAAAAAAAAAAIAAAAAQAAAAAAAAAIAAEAAAAAAAAAAAAJAAAAAQAAAAAAAAAJAAEAAAAAAAAAAAAKAAAAAQAAAAAAAAAKAAEAAAAAAAAAAAALAAAAAQAAAAAAAAAMAAAAAQAAAAAAAAANAAAAAQAAAAAAAAAOAAAAAQAAAAAAAAAPAAAAAQAAAAAAAAALAAEAAAAAAAAAAAAMAAEAAAAAAAAAAAANAAEAAAAAAAAAAAAOAAEAAAAAAAAAAAAPAAEAAAAAAAAAAAA=")
+tile_map_data = PackedByteArray("AAAAAAAAAQAAAAAAAAAAAAEAAAAAAAAAAAABAAAAAQAAAAAAAAABAAEAAAAAAAAAAAACAAAAAQAAAAAAAAACAAEAAAAAAAAAAAADAAAAAQAAAAAAAAADAAEAAAAAAAAAAAAEAAAAAQAAAAAAAAAEAAEAAAAAAAAAAAAFAAAAAQAAAAAAAAAFAAEAAAAAAAAAAAAGAAAAAQAAAAAAAAAGAAEAAAAAAAAAAAAHAAAAAQAAAAAAAAAHAAEAAAAAAAAAAAAIAAAAAQAAAAAAAAAIAAEAAAAAAAAAAAAJAAAAAQAAAAAAAAAJAAEAAAAAAAAAAAA=")
 tile_set = ExtResource("p_tileset")
 collision_enabled = false
 
@@ -58,6 +59,7 @@ texture = ExtResource("deco_pine")
 position = Vector2(1450, 512)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ChaoDir" unique_id=1247159400]
+position = Vector2(155, 5)
 shape = SubResource("floor_dir")
 
 [node name="ChaoDirVisual" type="TileMapLayer" parent="." unique_id=1099872979]
@@ -81,3 +83,5 @@ position = Vector2(850, 780)
 
 [node name="HUD" parent="." unique_id=90346152 instance=ExtResource("p_hud")]
 indice = 5
+
+[connection signal="body_entered" from="PowerUp" to="PowerUp" method="_on_body_entered"]

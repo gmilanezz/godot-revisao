@@ -1,10 +1,4 @@
-res://scripts/player.gd
-res://cenas/cena04.tscn
+res://cenas/cena10.tscn
 res://recursos/ground_tileset.tres
 res://cenas/cena05.tscn
-res://scripts/porta.gd
-res://cenas/cena06.tscn
-res://cenas/cena07.tscn
-res://scripts/inimigo.gd
-res://scripts/porta_animada.gd
-res://cenas/cena10.tscn
+res://scripts/powerup.gd

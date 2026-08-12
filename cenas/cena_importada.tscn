@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://brr6o6itexs5x"]
+
+[ext_resource type="Texture2D" uid="uid://cv54e0avw5327" path="res://recursos/PNG/Default/tile_grass.png" id="1_kut2h"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e0ryh"]
+
+[node name="StaticBody2D" type="StaticBody2D" unique_id=1861225077]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1489910768]
+texture = ExtResource("1_kut2h")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1396395327]
+shape = SubResource("RectangleShape2D_e0ryh")

@@ -14,6 +14,9 @@
 [sub_resource type="RectangleShape2D" id="floor_esq"]
 size = Vector2(500, 128)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pcvg2"]
+size = Vector2(316, 115)
+
 [sub_resource type="RectangleShape2D" id="floor_dir"]
 size = Vector2(700, 128)
 
@@ -57,6 +60,8 @@ texture = ExtResource("deco_pine")
 position = Vector2(725, 480)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PonteQuebrada" unique_id=1675412170]
+position = Vector2(295, 27.5)
+shape = SubResource("RectangleShape2D_pcvg2")
 
 [node name="ConstruaAqui" type="Node2D" parent="." unique_id=29697789]
 position = Vector2(990, 480)
@@ -71,8 +76,6 @@ text = "Construa aqui uma nova cena:
 StaticBody2D + Sprite2D + CollisionShape2D"
 horizontal_alignment = 1
 autowrap_mode = 3
-
-[node name="TileMapLayer" type="TileMapLayer" parent="ConstruaAqui" unique_id=1166046118]
 
 [node name="ChaoDir" type="StaticBody2D" parent="." unique_id=165939122]
 position = Vector2(1530, 512)
