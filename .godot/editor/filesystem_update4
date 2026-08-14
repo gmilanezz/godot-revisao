@@ -1,4 +1,4 @@
-res://cenas/cena10.tscn
-res://recursos/ground_tileset.tres
 res://cenas/cena05.tscn
-res://scripts/powerup.gd
+res://recursos/ground_tileset.tres
+res://scripts/hud_pontuacao.gd
+res://cenas/cena10.tscn

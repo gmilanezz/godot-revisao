@@ -3,7 +3,8 @@ extends CanvasLayer
 ## a pontuacao e completar a funcao que soma e atualiza o texto.
 
 @onready var label_pontos: Label = $MarginContainer/VBox/Pontos
-
+var pontuacao: int = 0
 
 func somar_ponto() -> void:
-	pass
+	pontuacao += 1
+	label_pontos.text = "Pontos: " + str(pontuacao)
