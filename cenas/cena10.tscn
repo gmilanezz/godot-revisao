@@ -1,5 +1,6 @@
 [gd_scene format=4 uid="uid://cpy46jswab3ys"]
 
+[ext_resource type="PackedScene" uid="uid://brr6o6itexs5x" path="res://cenas/cena_importada.tscn" id="11_pecf1"]
 [ext_resource type="Texture2D" uid="uid://cteu44qo3peym" path="res://recursos/PNG/Default/background_cloudA.png" id="deco_cloudA"]
 [ext_resource type="Texture2D" uid="uid://dx1framtwspdb" path="res://recursos/PNG/Default/background_cloudB.png" id="deco_cloudB"]
 [ext_resource type="Texture2D" uid="uid://weaojmtc28h8" path="res://recursos/PNG/Default/tile_tree.png" id="deco_pine"]
@@ -101,3 +102,5 @@ position = Vector2(900, 780)
 
 [node name="HUD" parent="." unique_id=1583130169 instance=ExtResource("p_hud")]
 indice = 10
+
+[node name="StaticBody2D" parent="." unique_id=1861225077 instance=ExtResource("11_pecf1")]
